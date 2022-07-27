@@ -25,7 +25,7 @@ from Zaid.Database.active import *
 from Zaid.Database.clientdb import *
 from Zaid.Client.Joiner import *
 from youtubesearchpython import VideosSearch
-IMAGE_THUMBNAIL = "https://telegra.ph/file/adcf833bd6314e0cf31fd.png"
+IMAGE_THUMBNAIL = "https://telegra.ph/file/cf6349d8abf0b1af56f71.jpg"
 
 
 
@@ -61,9 +61,9 @@ async def ytdl(link):
     else:
         return 0, stderr.decode()
 
-@Client.on_message(command(["vplay", f"vplay@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["zplay", f"zplay@{BOT_USERNAME}"]) & other_filters)
 @AssistantAdd
-async def vplay(c: Client, m: Message):
+async def zplay(c: Client, m: Message):
     if HEROKU_MODE == "ENABLE":
         await m.reply_text("__Currently Heroku Mode is ENABLED so You Can't Stream Video because Video Streaming Cause of Banning Your Heroku Account__.")
         return
@@ -557,7 +557,7 @@ async def vstream(c: Client, m: Message):
                 elif Q == 360:
                     amaze = LowQualityVideo()
                 try:
-                    await loser.edit("🔄 **Joining vc...**")
+                    await loser.edit("🔄 **vc vara iru...**")
                     if int(assistant) == 1:
                        await call_py.join_group_call(
                            chat_id,
@@ -626,7 +626,7 @@ async def vstream(c: Client, m: Message):
                     await m.reply_photo(
                         photo=f"{VIDEO_IMG}",
                         reply_markup=InlineKeyboardMarkup(buttons),
-                        caption=f"💡 **[__Live Streaming Started__]({link}) **\n\n💭 **Chatinfo:** `{chat_id}`\n🧸 **Request by:** {requester}",
+                        caption=f"💡 **[__vc la padam podra parunga frndz__]({link}) **\n\n💭 **Chatinfo:** `{chat_id}`\n🧸 **Request by:** {requester}",
                     )
                 except Exception as ep:
                     await loser.delete()
