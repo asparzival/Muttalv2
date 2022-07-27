@@ -59,6 +59,6 @@ PLAY_IMG = getenv("PLAY_IMG", "https://telegra.ph/file/10b1f781170b1e1867f68.png
 QUE_IMG = getenv("QUE_IMG", "https://telegra.ph/file/b95c13eef1ebd14dbb458.png")
 CMD_IMG = getenv("CMD_IMG", "https://telegra.ph/file/feb320da568222907cd32.jpg")
 VIDEO_IMG = getenv("VIDEO_IMG", "https://telegra.ph/file/6213d2673486beca02967.png")
-SKIP_IMG = getenv("SKIP_IMG", "https://telegra.ph/file/f02efde766160d3ff52d6.png")
+SKIP_IMG = getenv("SKIP_IMG", "https://telegra.ph/file/6d3d4dfc6a96ae19e3581.jpg")
 NEXT_IMG = getenv("NEXT_IMG", "https://telegra.ph/file/f02efde766160d3ff52d6.png")
 HEROKU_MODE = getenv("HEROKU_MODE", None)
