@@ -269,7 +269,7 @@ async def play(c: Client, m: Message):
         if len(m.command) < 2:
          await m.reply_photo(
                      photo=f"{CMD_IMG}",
-                    caption="💬**Usage: /play Give a Title Song To Play Music or /vplay for Video Play**"
+                    caption="💬**Vanmam: /play song name kududa/kududi venna**"
                     ,
                       reply_markup=InlineKeyboardMarkup(
                     [
